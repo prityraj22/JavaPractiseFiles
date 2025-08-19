@@ -151,12 +151,42 @@ public static  void hallow_rectangle(int totRows, int totCols) {
         }
         System.out.println();
     }
-
+   }
 
     //video-10 Diamond Pattern
-}
+    public static void  diamond(int n)
+    {
+        //ist half
+        for (int i = 1; i <= n; i++) {
+            //space
+            for(int j=1; j<=(n-i); j++){
+                System.out.print(" ");
+            }
+
+            //stars
+            for(int j=1; j<=(2*i)-1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+          //2nd half
+        for (int i = n; i >= 1; i--) {
+            //space
+            for(int j=1; j<=(n-i); j++){
+                System.out.print(" ");
+            }
+
+            //stars
+            for(int j=1; j<=(2*i)-1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 
 
+   
 
     public static void main(String[] args)
      {
@@ -189,9 +219,12 @@ public static  void hallow_rectangle(int totRows, int totCols) {
 
 
               // video-9  hollow_rhombous
-           hollow_rhombous(8);
+        //    hollow_rhombous(8);
+
 
            //video-10 Diamond
+           diamond(8);
+
 
     }
 }
